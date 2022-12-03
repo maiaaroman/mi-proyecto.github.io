@@ -1,0 +1,54 @@
+@media (max-width: 425px) {
+    h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    label {
+        font-size: 12px;
+    }
+    input {
+        font-size: 12px;
+    }
+    .p {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 774px) {
+    .menu {
+        display: none;
+    }
+    .menu-hamburguesa {
+        display: block;
+        width: 50px;
+    }
+    #header {
+        height: 130px;
+    }
+}
+
+@media (min-width: 925px) {
+    .flex-container2 {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-row: 1fr;
+        gap: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1150px) {
+    #flex-container2 {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-row: 1fr;
+        gap: 30px;
+        text-align: center;
+        justify-content: center;
+    }
+}

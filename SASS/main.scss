@@ -1,0 +1,154 @@
+@import "_vars.scss";
+@import "_header.scss";
+@import "_media";
+
+@keyframes mi-efecto {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    body {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        h1 {
+            padding: 20px;
+        }
+        
+        h2 {
+            padding: 40px;
+        }
+        
+        p {
+            margin: 1vh;
+            padding-left: 2vh;
+            font-size: 15px;
+        }
+        #flex-container {
+            padding: 13px;
+            display: flex;
+            gap: 30px;
+            flex-flow: row wrap;
+            justify-content: center;
+            .flex-items {
+                background-color: $backgroundItems;
+                border-radius: 20px;
+                img {
+                    width: 100%;
+                    height: 350px;
+                    padding: 20px;
+                    object-fit: cover;
+                }
+            }
+        }
+        #flex-container-nosotros {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 5px;
+            p {
+                text-align: center;
+            }
+            .info {
+                text-align: center;
+                padding: 13px;
+                .mapa {
+                    display: flex;
+                    justify-content: center;
+                    padding: 10px;
+                }
+            }
+        }
+        #main {
+            align-items: center;
+            .flex-container2 {
+                padding: 73px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-row: 1fr 1fr 1fr;
+                gap: 30px;
+
+                justify-content: center;
+                .flex-items {
+                    background-color: $backgroundItems;
+                    border-radius: 20px;
+                    img {
+                        width: 450px;
+                        height: 350px;
+                        padding: 20px;
+                        object-fit: cover;
+                        border-radius: 25px;
+                    }
+                    .verde {
+                        color:  rgb(97, 190, 79);
+                    }
+                }
+            }
+        }
+        h3 {
+            text-align: center;
+        }
+        #contenedor-forms {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 130px;
+            .forms {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                justify-content: center;
+                .form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                input {
+                    width: 200px;
+                    
+                }
+                textarea {
+                    width: 200px;
+                }
+                .bottom {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 5px;
+                }
+            }
+        }
+        .contactanos {
+            text-align: center;
+            padding-top: 60px;
+        }
+        #footer {
+            height: 150px;
+            margin-top: 20px;
+            background-color: $footercolor;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            align-items: center;
+            .rrss p {
+                font-size: 20px;
+                padding: 20px;
+            }
+            .icono img {
+                width: 20px;
+                height: 20px;
+            }
+            .icono {
+                display: flex;
+                gap: 10px;
+            }
+        }
+    }
+}

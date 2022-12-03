@@ -1,0 +1,243 @@
+#header {
+  height: 90px;
+  background-color: rgb(212, 220, 235);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 1s;
+}
+#header .logo img {
+  width: 200px;
+  -webkit-animation-name: mi-efecto;
+          animation-name: mi-efecto;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+#header .menu {
+  padding-right: 60px;
+}
+#header .menu ul {
+  display: flex;
+  gap: 25px;
+}
+#header .menu ul li {
+  list-style: none;
+}
+#header .menu ul li a {
+  text-decoration: none;
+  color: black;
+}
+#header .menu ul li a :hover {
+  background-color: rgb(187, 200, 223);
+  padding: 10px;
+}
+#header .menu-hamburguesa {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  label {
+    font-size: 12px;
+  }
+  input {
+    font-size: 12px;
+  }
+  .p {
+    font-size: 13px;
+  }
+}
+@media (max-width: 774px) {
+  .menu {
+    display: none;
+  }
+  .menu-hamburguesa {
+    display: block;
+    width: 50px;
+  }
+  #header {
+    height: 130px;
+  }
+}
+@media (min-width: 925px) {
+  .flex-container2 {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@media (min-width: 1150px) {
+  #flex-container2 {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row: 1fr;
+    gap: 30px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+@-webkit-keyframes mi-efecto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes mi-efecto {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+* body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+* body h1 {
+  padding: 20px;
+}
+* body h2 {
+  padding: 40px;
+}
+* body p {
+  margin: 1vh;
+  padding-left: 2vh;
+  font-size: 15px;
+}
+* body #flex-container {
+  padding: 13px;
+  display: flex;
+  gap: 30px;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+* body #flex-container .flex-items {
+  background-color: rgb(241, 237, 237);
+  border-radius: 20px;
+}
+* body #flex-container .flex-items img {
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+* body #flex-container-nosotros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+}
+* body #flex-container-nosotros p {
+  text-align: center;
+}
+* body #flex-container-nosotros .info {
+  text-align: center;
+  padding: 13px;
+}
+* body #flex-container-nosotros .info .mapa {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+* body #main {
+  align-items: center;
+}
+* body #main .flex-container2 {
+  padding: 73px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row: 1fr 1fr 1fr;
+  gap: 30px;
+  justify-content: center;
+}
+* body #main .flex-container2 .flex-items {
+  background-color: rgb(241, 237, 237);
+  border-radius: 20px;
+}
+* body #main .flex-container2 .flex-items img {
+  width: 450px;
+  height: 350px;
+  padding: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 25px;
+}
+* body #main .flex-container2 .flex-items .verde {
+  color: rgb(97, 190, 79);
+}
+* body h3 {
+  text-align: center;
+}
+* body #contenedor-forms {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 130px;
+}
+* body #contenedor-forms .forms {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+* body #contenedor-forms .forms .form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+* body #contenedor-forms .forms input {
+  width: 200px;
+}
+* body #contenedor-forms .forms textarea {
+  width: 200px;
+}
+* body #contenedor-forms .forms .bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+* body .contactanos {
+  text-align: center;
+  padding-top: 60px;
+}
+* body #footer {
+  height: 150px;
+  margin-top: 20px;
+  background-color: rgb(243, 243, 243);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+* body #footer .rrss p {
+  font-size: 20px;
+  padding: 20px;
+}
+* body #footer .icono img {
+  width: 20px;
+  height: 20px;
+}
+* body #footer .icono {
+  display: flex;
+  gap: 10px;
+}/*# sourceMappingURL=main.css.map */
