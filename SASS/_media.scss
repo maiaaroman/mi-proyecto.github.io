@@ -17,15 +17,44 @@
 }
 
 @media (max-width: 774px) {
-    .menu {
-        display: none;
-    }
-    .menu-hamburguesa {
-        display: block;
-        width: 50px;
-    }
     #header {
-        height: 130px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-right: 0px;
+        .menu {
+            padding-top: 20px;
+            ul {
+                flex-direction: column;
+                align-items: center;
+                li {
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+
+    #header {
+        height: 400px;
+    }
+
+    footer {
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media (min-width: 774px) {
+    .menu {
+        padding-right: 60px;
+    }
+    .logo {
+        padding-left: 45px;
     }
 }
 

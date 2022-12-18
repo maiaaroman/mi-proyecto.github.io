@@ -1,17 +1,16 @@
 #header {
-    height: 90px;
+    height: 120px;
     background-color: $headercolor;
     display: flex;
     align-items: center;
     justify-content: space-between;
     transition: all 1s;
     .logo img {
-        width: 200px;
+        width: 128px;
         animation-name: mi-efecto;
         animation-duration: 2s;
     }
     .menu {
-        padding-right: 60px;
         ul {
             display: flex;
             gap: 25px;
@@ -20,15 +19,12 @@
                 a {
                     text-decoration: none;
                     color: black;
-                    :hover {
-                        background-color: $menu;
-                        padding: 10px;
-                    }
                 }
             }
         }
     }
-    .menu-hamburguesa {
-        display: none;
+    ul li a:hover {
+        background-color: $menu;
+        padding: 10px;
     }
 }
