@@ -1,4 +1,5 @@
 @import "_vars.scss";
+@import "_mixin.scss";
 @import "_header.scss";
 @import "_media";
 @import "_footer.scss";
@@ -39,13 +40,9 @@
             flex-flow: row wrap;
             justify-content: center;
             .flex-items {
-                background-color: $backgroundItems;
-                border-radius: 20px;
+                @include items;
                 img {
-                    width: 100%;
-                    height: 350px;
-                    padding: 20px;
-                    object-fit: cover;
+                    @include img;
                 }
                 .precio {
                     color: rgb(6, 136, 6);
@@ -72,9 +69,6 @@
                     padding: 10px;
                 }
             }
-        }
-        input {
-            height: 25px;
         }
         .perfil {
             text-align: center;
@@ -103,14 +97,9 @@
                 gap: 30px;
                 justify-content: center;
                 .flex-items {
-                    background-color: $backgroundItems;
-                    border-radius: 20px;
+                    @include items;
                     img {
-                        width: 100%;
-                        height: 350px;
-                        padding: 20px;
-                        object-fit: cover;
-                        border-radius: 25px;
+                        @include img;
                     }
                     .verde {
                         color:  rgb(97, 190, 79);
@@ -123,7 +112,7 @@
         }
         .fondo {
             background-image: url(../img/pexels-george-milton-7015073.jpg);
-            margin: auto;
+            background-attachment: fixed;
         }
         #contenedor-forms {
             display: flex;
@@ -141,11 +130,12 @@
                     align-items: center;
                 }
                 input {
-                    width: 200px;
-                    
+                    width: 250px;
+                    height: 40px;
                 }
                 textarea {
-                    width: 200px;
+                    width: 250px;
+                    height: 110px;
                 }
                 .bottom {
                     display: flex;
@@ -157,7 +147,7 @@
         }
         .contactanos {
             text-align: center;
-            padding-top: 60px;
+            padding-top: 90px;
         }
     }
 }

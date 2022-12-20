@@ -48,6 +48,7 @@
 }
 @media (max-width: 774px) {
   #header {
+    height: 400px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -64,9 +65,6 @@
   }
   #header .menu ul li {
     flex-direction: column;
-  }
-  #header {
-    height: 400px;
   }
   footer {
     height: 450px;
@@ -204,6 +202,7 @@
   padding: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 25px;
 }
 * body #flex-container .flex-items .precio {
   color: rgb(6, 136, 6);
@@ -228,9 +227,6 @@
   display: flex;
   justify-content: center;
   padding: 10px;
-}
-* body input {
-  height: 25px;
 }
 * body .perfil {
   text-align: center;
@@ -280,7 +276,7 @@
 }
 * body .fondo {
   background-image: url(../img/pexels-george-milton-7015073.jpg);
-  margin: auto;
+  background-attachment: fixed;
 }
 * body #contenedor-forms {
   display: flex;
@@ -300,10 +296,12 @@
   align-items: center;
 }
 * body #contenedor-forms .forms input {
-  width: 200px;
+  width: 250px;
+  height: 40px;
 }
 * body #contenedor-forms .forms textarea {
-  width: 200px;
+  width: 250px;
+  height: 110px;
 }
 * body #contenedor-forms .forms .bottom {
   display: flex;
@@ -313,5 +311,5 @@
 }
 * body .contactanos {
   text-align: center;
-  padding-top: 60px;
+  padding-top: 90px;
 }/*# sourceMappingURL=main.css.map */

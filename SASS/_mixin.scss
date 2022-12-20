@@ -1,0 +1,17 @@
+@mixin items {
+    background-color: $backgroundItems;
+    border-radius: 20px;
+}
+
+@mixin img {
+    width: 100%;
+    height: 350px;
+    padding: 20px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+@mixin logo {
+    animation-name: mi-efecto;
+    animation-duration: 2s;
+}

@@ -18,6 +18,7 @@
 
 @media (max-width: 774px) {
     #header {
+        height: 400px;
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -34,10 +35,6 @@
                 }
             }
         }
-    }
-
-    #header {
-        height: 400px;
     }
 
     footer {

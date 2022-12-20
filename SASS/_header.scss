@@ -7,8 +7,7 @@
     transition: all 1s;
     .logo img {
         width: 128px;
-        animation-name: mi-efecto;
-        animation-duration: 2s;
+        @include logo;
     }
     .menu {
         ul {
