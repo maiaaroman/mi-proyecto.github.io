@@ -11,7 +11,8 @@
     border-radius: 25px;
 }
 
-@mixin logo {
+@mixin logo ($ancho) {
+    width: $ancho;
     animation-name: mi-efecto;
     animation-duration: 2s;
 }

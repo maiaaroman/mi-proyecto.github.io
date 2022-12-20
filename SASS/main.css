@@ -67,11 +67,8 @@
     flex-direction: column;
   }
   footer {
-    height: 450px;
-    display: flex;
-    flex-direction: column;
+    height: 520px;
     flex-wrap: wrap;
-    justify-content: center;
   }
 }
 @media (min-width: 774px) {
@@ -84,13 +81,9 @@
 }
 @media (min-width: 925px) {
   .flex-container2 {
-    padding: 40px;
-    display: grid;
     grid-template-columns: 1fr 1fr;
     grid-row: 1fr;
-    gap: 30px;
     text-align: center;
-    justify-content: center;
   }
 }
 @media (min-width: 1150px) {
@@ -105,7 +98,6 @@
   }
 }
 #footer {
-  height: 350px;
   background-color: rgb(243, 243, 243);
   display: flex;
   flex-direction: row;
@@ -229,15 +221,18 @@
   padding: 10px;
 }
 * body .perfil {
+  padding: 25px;
   text-align: center;
 }
 * body .perfil a {
   font-size: 20px;
-  color: black;
   text-decoration: none;
 }
+* body .perfil a:active {
+  color: rgb(112, 122, 209);
+}
 * body .sesion {
-  padding: 34px;
+  padding: 63px;
   text-align: center;
 }
 * body .sesion a {
@@ -245,16 +240,11 @@
   color: red;
   text-decoration: none;
 }
-* body #main {
-  align-items: center;
-}
 * body #main .flex-container2 {
-  padding: 73px;
+  padding: 20px;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-row: 1fr 1fr 1fr;
-  gap: 30px;
   justify-content: center;
+  gap: 30px;
 }
 * body #main .flex-container2 .flex-items {
   background-color: rgb(241, 237, 237);
@@ -308,6 +298,7 @@
   flex-direction: column;
   align-items: center;
   gap: 5px;
+  height: 60px;
 }
 * body .contactanos {
   text-align: center;

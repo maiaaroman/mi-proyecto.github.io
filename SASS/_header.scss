@@ -6,8 +6,7 @@
     justify-content: space-between;
     transition: all 1s;
     .logo img {
-        width: 128px;
-        @include logo;
+        @include logo (128px);
     }
     .menu {
         ul {
